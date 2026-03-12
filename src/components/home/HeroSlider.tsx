@@ -8,21 +8,21 @@ import Image from "next/image";
 
 const slides = [
   {
-    image: "Hero1.png", // Wayanad/Kerala lush hills
+    image: "hero1.png", // Wayanad/Kerala lush hills
     eyebrow: "Nature's Bounty",
     title: "From the Heart of\nWayanad to the World.",
     cta: "Explore Our Harvest",
     link: "/products",
   },
   {
-    image: "Hero2.png", // Coffee beans drying
+    image: "hero2.png", // Coffee beans drying
     eyebrow: "Grown with Care",
     title: "Sourcing Nature's\nFinest Spices & Coffee.",
     cta: "Our Story",
     link: "/about",
   },
   {
-    image: "Hero2.png", // Tea plantations
+    image: "hero2.png", // Tea plantations
     eyebrow: "Sustainability First",
     title: "Harvested with Integrity,\nDelivered with Trust.",
     cta: "Partner With Us",

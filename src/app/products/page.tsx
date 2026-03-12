@@ -7,49 +7,49 @@ const allProducts = [
     name: "Coffee Beans", 
     desc: "Harvested from misty Wayanad slopes, embodying balance and depth.", 
     price: "Premium Arabica/Robusta", 
-    image: "coffee-beans.png" 
+    image: "/coffee-beans.png" 
   },
   { 
     name: "Ginger", 
     desc: "Bold aroma, cultivated in mineral-rich terrain for natural potency.", 
     price: "Fresh & Sun-Dried", 
-    image: "ginger.png" 
+    image: "/ginger.png" 
   },
   { 
     name: "Cardamom (Elam)", 
     desc: "The 'Queen of Spices', capturing Kerala's aromatic essence.", 
     price: "Green & Bold", 
-    image: "elam.png" 
+    image: "/elam.png" 
   },
   { 
     name: "Banana", 
     desc: "Naturally ripened, known for superior sweetness and export quality.", 
     price: "Export Grade", 
-    image: "banana.png" 
+    image: "/banana.png" 
   },
   { 
     name: "Black Pepper", 
     desc: "Sun-dried to perfection, delivering a bold, peppery bite.", 
     price: "Tellicherry Bold", 
-    image: "pepper.png" 
+    image: "/pepper.png" 
   },
   { 
     name: "Tea Powder", 
     desc: "Sourced from South Indian gardens for a smooth, refreshing brew.", 
     price: "Fine Blend", 
-    image: "tea-powder.png" 
+    image: "/tea-powder.png" 
   },
   { 
     name: "Coffee Powder", 
     desc: "Finely ground, delivering a deep, aromatic South Indian experience.", 
     price: "Pure & Blended", 
-    image: "coffee-powder.png" 
+    image: "/coffee-powder.png" 
   },
   { 
     name: "Pepper Powder", 
     desc: "Crafted from premium peppercorns for warmth and pure flavor.", 
     price: "Fine Ground", 
-    image: "pepper-powder.png" 
+    image: "/pepper-powder.png" 
   },
 ];
 
