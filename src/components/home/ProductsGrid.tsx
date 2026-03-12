@@ -2,6 +2,9 @@
 
 import SectionLabel from "@/components/ui/SectionLabel";
 import SectionTitle from "@/components/ui/SectionTitle";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 const products = [
   { 
@@ -56,33 +59,51 @@ const products = [
 
 export default function ProductsGrid() {
   return (
-    <section className="bg-white py-24 px-6 md:px-10 text-center font-cormorant border-t border-cream/10">
+    <section className="bg-white py-24 px-6 md:px-10 text-center border-t border-cream/10">
       <SectionLabel>What we offer</SectionLabel>  
       <SectionTitle>Our Finest Collections</SectionTitle>
       
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 max-w-6xl mx-auto mt-12 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-16 md:gap-x-8 md:gap-y-20 max-w-7xl mx-auto mt-16 font-cormorant">
         {products.map((product) => (
-          <a
+          <Link
             key={product.name}
             href={product.link}
-            className="flex flex-col items-center group transition-transform duration-[400ms]"
+            className="group block relative"
           >
-            <div className="w-full aspect-square bg-cream-light overflow-hidden rounded-[2px] border border-cream/20 transition-all duration-500 group-hover:shadow-[0_20px_50px_rgba(26,54,38,0.12)] rounded-[2px]">
-              <img 
+            {/* Image Container with Editorial Aspect Ratio */}
+            <div className="relative aspect-[4/5] w-full overflow-hidden bg-cream-light rounded-[2px] transition-all duration-700 ease-in-out group-hover:shadow-[0_30px_60px_-15px_rgba(26,54,38,0.2)]">
+              <Image 
                 src={product.image} 
                 alt={product.name} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                fill
+                className="object-cover transition-transform duration-[1s] ease-out group-hover:scale-110" 
               />
+              
+              {/* Premium Overlay Reveal */}
+              <div className="absolute inset-0 bg-green-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6">
+                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-full bg-cream border border-cream/20 flex items-center justify-center mb-3">
+                    <ArrowUpRight className="text-green w-5 h-5" />
+                  </div>
+                  <span className="font-lato text-[0.65rem] tracking-[0.2em] uppercase font-bold text-cream">View Details</span>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col mt-5">
-              <span className="font-playfair text-[1.2rem] text-green font-semibold">
+
+            {/* Text Content with Refined Typography */}
+            <div className="mt-8 flex flex-col items-center">
+              <h3 className="font-playfair text-[1.25rem] md:text-[1.4rem] text-green-dark font-semibold leading-tight mb-2">
                 {product.name}
-              </span>
-              <span className="text-[0.68rem] text-muted tracking-[0.14em] uppercase font-lato mt-1.5 opacity-80">
-                {product.desc}
-              </span>
+              </h3>
+              <div className="flex items-center gap-2">
+                <span className="h-[1px] w-4 bg-cream-dark opacity-40"></span>
+                <span className="text-[0.9rem] md:text-[1rem] text-muted italic opacity-90 leading-none">
+                  {product.desc}
+                </span>
+                <span className="h-[1px] w-4 bg-cream-dark opacity-40"></span>
+              </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
