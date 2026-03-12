@@ -3,7 +3,7 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -147,7 +147,7 @@ export default function ContactPage() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.05)_0%,transparent_70%)]"></div>
               <h4 className="font-playfair text-xl font-semibold mb-4 relative z-10 text-cream-light">Global Reach</h4>
               <p className="font-cormorant text-[1rem] opacity-80 leading-relaxed relative z-10 mb-6 font-italic">
-                Supplying the world's most discerning importers across North America, Europe, and Asia with traceable, organic produce.
+                Supplying the world&apos;s most discerning importers across North America, Europe, and Asia with traceable, organic produce.
               </p>
               <div className="relative z-10">
                 <span className="font-lato text-[0.65rem] tracking-[0.2em] uppercase font-bold text-cream-dark">Certified Organic • ISO 22000</span>

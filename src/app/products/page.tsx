@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image'
 import SectionLabel from "@/components/ui/SectionLabel";
 import SectionTitle from "@/components/ui/SectionTitle";
 

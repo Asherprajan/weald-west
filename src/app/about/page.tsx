@@ -98,7 +98,7 @@ export default function AboutPage() {
               <div className="absolute left-[1.12rem] md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-green border-4 border-cream-light z-20"></div>
               <div className="md:w-1/2 md:pl-16 pl-10">
                 <p className="font-cormorant text-[1.15rem] text-[#3a3a3a] italic leading-relaxed">
-                  Launch of our "Earth-to-Table" initiative, ensuring 100% plastic-free packaging and carbon-neutral logistics across our premium range.
+                  Launch of our &quot;Earth-to-Table&quot; initiative, ensuring 100% plastic-free packaging and carbon-neutral logistics across our premium range.
                 </p>
               </div>
             </div>
