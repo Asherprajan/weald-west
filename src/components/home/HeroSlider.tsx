@@ -49,9 +49,15 @@ export default function HeroSlider() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.4, ease: "easeInOut" }}
-          className="absolute inset-0 bg-cover bg-center flex items-end"
-          style={{ backgroundImage: `url(${slides[current].image})` }}
+          className="absolute inset-0 flex items-end"
         >
+          <Image
+            src={`/${slides[current].image}`}
+            alt={slides[current].title}
+            fill
+            className="object-cover"
+            priority
+          />
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,25,15,0.8)] via-[rgba(10,25,15,0.25)] to-[rgba(10,25,15,0.08)]"></div>
           
